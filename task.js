@@ -1,6 +1,12 @@
 var elementMenuImage = document.getElementsByClassName('menuImage');
 var elementNavList = document.getElementsByClassName('navList');
+let width = screen.width;
 var index = 0;
+if(width > 750)
+{
+   elementNavList[0].classList.remove('block');
+   elementNavList[0].classList.add('none');
+}
 function onClick(){
      if(index == 0)
      {

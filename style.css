@@ -141,16 +141,21 @@ li:hover {
     z-index: -1;
 }
 
-.navList,
-.menu {
+.navList,.menu {
     display: none;
 }
 
 .block {
     display: block;
 }
-
+.none{
+    display: none;
+}
 @media screen and (max-width: 750px) {
+    body{
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
     html {
         font-size: 18px;
     }
@@ -159,7 +164,7 @@ li:hover {
         max-width: 95%;
         margin-left: 2rem;
         overflow-x: hidden;
-
+        
     }
 
     .row {
